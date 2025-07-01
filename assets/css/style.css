@@ -9,4 +9,81 @@ html {
 /* khoi phuc lại cỡ chữ mặc định theo đơn vị rem */
 body {
   font-size: 1.6rem;
+  font-family: "Sen", sans-serif;
+}
+
+/* ========= common =========*/
+a {
+  text-decoration: none;
+}
+.main-container {
+  width: 1170px;
+  max-width: calc(100% - 48%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline;
+  padding: 11px 16px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 24.5px;
+  background-color: #171100;
+  line-height: 50px;
+  min-width: 118px;
+}
+
+/* ========= header ========= */
+
+.header {
+  background-color: #eff175;
+}
+.header .fixed {
+  position: sticky;
+  top: -28px;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+}
+.nav li.active a,
+.nav a:hover {
+  color: #171100;
+  /* font-weight: 600; */
+  text-shadow: 1px 0px 0px currentColor;
+}
+
+.nav li.active a::after {
+  position: absolute;
+  height: 2px;
+  width: 12px;
+  background-color: #171100;
+  display: block;
+  border-radius: 1px;
+  left: 21px;
+  content: "";
+}
+
+.header .btn-sign-up {
+  min-width: 144px;
+}
+
+.header.action {
+  margin-left: 49px;
 }
